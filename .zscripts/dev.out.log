@@ -240,3 +240,26 @@ Import traces:
 
 
  GET / 500 in 40ms (compile: 31ms, render: 10ms)
+⨯ ./src/app/page.tsx:39:8
+Ecmascript file had an error
+[0m [90m 37 |[39m   [33mArrowRight[39m
+ [90m 38 |[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 39 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m [32m"next/image"[39m[33m;[39m
+ [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 40 |[39m
+ [90m 41 |[39m [90m// WhatsApp contact numbers[39m
+ [90m 42 |[39m [36mconst[39m whatsappContacts [33m=[39m {[0m
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 34ms (compile: 26ms, render: 8ms)

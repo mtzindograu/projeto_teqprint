@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Teq Print Informática | Informática, Impressão e Personalizados em Assis Chateaubriand - PR",
-  description: "Teq Print Informática - 24 anos de experiência em informática, impressão rápida e produtos personalizados. Assistência técnica, manutenção de computadores e impressoras em Assis Chateaubriand - PR. Atendimento rápido e eficiente.",
+  title: "Teq Print Informática | Impressão, Informática e Personalizados",
+  description: "Teq Print Informática - 24 anos de experiência em impressão rápida, assistência técnica e produtos personalizados. Qualidade e confiança em Assis Chateaubriand - PR.",
   keywords: [
     "informática em Assis Chateaubriand",
     "impressão rápida",
@@ -33,11 +33,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Teq Print Informática" }],
   icons: {
-    icon: "/logo-teqprint.png",
+    icon: "/logo-teqprint .png",
+    apple: "/logo-teqprint .png",
   },
   openGraph: {
     title: "Teq Print Informática | 24 Anos de Qualidade",
-    description: "Referência em informática, especialista em impressos e expert em assistência técnica. Soluções completas em tecnologia, impressão e personalizados.",
+    description: "Referência em informática, especialista em impressos e expert em assistência técnica.",
     url: "https://teqprint.com.br",
     siteName: "Teq Print Informática",
     type: "website",
@@ -71,6 +72,7 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        suppressHydrationWarning
       >
         {children}
         <Toaster />
